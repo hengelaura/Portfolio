@@ -5,19 +5,26 @@
         <div style="padding-left: 20px; height: 525px; background-color:#383F39; color: #E4E6E5;">
             <img src="../static/img/biodiversity.png" style="float: right; margin: 20px">
             <img src="../static/img/nps_logo.png" style="float: right; height: 250px; width: auto">
-            <h2 style="padding-top: 25px">Biodiversity Across Four National Parks</h2>
+            <h2 style="padding-top: 25px; text-align: center;">Biodiversity Across Four National Parks</h2>
             <hr style="width: 50%; border-color:#E4E6E5;" align="left"/>
             <p>The goal of this project was to draw conclusions from data concerning species observed in four National Parks in the United States. The four parks included Yosemite, Great Smoky Mountains, Bryce, and Yellowstone. The observations of the species included information concerning how many observations of a species had been recorded at a particular park. A separate table of species included information regarding scientific names, common names, conservation statuses, and category of species.</p>
             <p>Once examined, the important data was identified as all data related to species that had a defined conservation status in the species table because the author wished to draw conclusions about what conservation statuses different species have and how that is connected to the number of sightings reported in the parks. One hundred seventy nine (179) species had non-null conservation statuses, so the data was restricted to those species in both the observation and species tables. Further, the species table had the scientific name expanded to be able to see if a particular genus was more affected than others. The observation table was then modified such that each species had only one row containing how many sightings there had been at each park. An inner merge was performed using the scientific name to end with a single table for analysis.</p>         
             <p>It was found that a large majority of species had the conservation status of Species of Concern. The three largest affected categories were birds, vascular plants, and mammals. Analysis of the conservation status by genus found that the genus Myotis had the most separate species represented with conservation statuses. The genus Myotis refers to the bat, so it can be concluded that national parks are maintaining environments in which bat populations may be able to recover. Overall, national parks are safe havens for at-risk species, and expanding the ecosystems that we see in these parks could help to give these species a better chance at survival.</p>
         </div>
-        <div style="padding-left: 20px; height: 525px; background-color:#383F39; color: #E4E6E5;">
-            <img src="../static/img/planner_example.png" style="float: right; margin: 20px; width: 35%">
-            <h2 style="padding-top: 25px;">Planner Page Generator</h2>
-            <hr style="width: 50%; border-color:#E4E6E5;" align="left"/>
+        <div style="padding-right: 20px; height: 525px; background-color:#383F39; color: #E4E6E5;">
+            <img src="../static/img/planner_example.png" style="float: left; margin: 20px; width: 35%; padding-top: 30px">
+            <h2 style="padding-top: 25px; text-align: center;">Planner Page Generator</h2>
+            <hr style="width: 50%; border-color:#E4E6E5;" align="right"/>
             <p>Over the years, I'd grown tired of trying to find a personal planner that met all of my requirements. It seemed as though I'd be able to find one that truly worked for me 1 in every 5 years, but I'd never be able to find the same layout for the next year, and I always felt conflicted about having to throw out my previous year. I tried using digital planners, but truthfully, a pen and paper makes it easier for me to remember my schedule and deadlines.</p>
             <p>As a result, I decided to delve into the world of bullet journaling. I thought it would be a fun and creative way to get exactly what I wanted out of my planner, but I hadn't factored in how long it took to draw the pages out for each month nor how difficult it is to draw a straight line. This is where I decided to create a program using Python that would be able to generate the exact layout that I wanted for any year I needed. My initial program gave me ability to print an entire years worth of planner pages that were custom to my reusable planner cover in minutes.</p>
             <p>Now, I'm revisiting this project to add more customizability and a GUI to enable me to tweak my layouts whenever I please as my needs change. Follow along with me as I further refine this application to work for a wide audience.</p>
+        </div>
+        <div style="padding-left: 20px; height: 525px; background-color:#383F39; color: #E4E6E5;">
+            <img src="../static/img/railway.png" style="float: right; margin: 20px; width: 40%; padding-top: 50px;">
+            <h2 style="padding-top: 25px; text-align: center;">This Website!</h2>
+            <hr style="width: 50%; border-color:#E4E6E5;" align="left"/>
+            <p>I created this website using the Flask framework available with Python. I made use of the Jinja2 template that comes with the Flask library to keep the navigation present on each page. I also used some Bootstrap code to format the navigation bar.</p>
+            <p>I deployed my site using Railway by connecting to the python and html code in my Portfolio repository on GitHub. Feel free to examine my code by visiting my GitHub profile!</p>
         </div>
     </body>
 {% endblock %}
