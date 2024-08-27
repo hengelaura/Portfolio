@@ -2,6 +2,7 @@
 <html>
     <link rel="stylesheet" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <head>
+      <script src="https://kit.fontawesome.com/09afe2f7cf.js" crossorigin="anonymous"></script>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">Laura Hengel</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,10 +24,10 @@
             <div id=navbarNav style="text-align: right;">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="https://github.com/hengelaura">GitHub</a>
+                        <a class="nav-link" href="https://github.com/hengelaura"><img src="../static/img/github-mark.png" style="height:30px"></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="https://www.linkedin.com/in/laura-hengel/">LinkedIn</a>
+                        <a class="nav-link" href="https://www.linkedin.com/in/laura-hengel/"><img src="../static/img/LI-In-Bug.png" style="height:30px"></a>
                     </li>
                 </ul>
             </div>
@@ -35,18 +36,27 @@
 
 
 {%block content %}
-<body >
+<body style="background-color: #383F39;">
   <div style="background-image: url('../static/img/IMG_0607.png'); background-repeat: no-repeat;
   background-size: 100% 1000px; height: 1000px; text-align: center;">
         <h2 style="padding-top: 150px;"> Hi, I'm Laura. I'm glad you're here!</h2>
         <p>I am a data engineer, data analyst, and fiber artist. I like to explore problems, develop solutions, and tell stories with my work. <br>
-        Take your time to look around, browse my projects, and get to know me a little better.</p>
-        <a href="#latest-project">My latest work</a>
+        Take your time to look around, browse my projects, and get to know me a little better.<br><br><br></p>
+        <a href="#latest-project" style="color:#383F39">
+          Check out my latest project<br>
+          <i class="fa-solid fa-circle-chevron-down fa-3x"></i>
+        </a>
     </div>
 
-    <div style="background-color: #383F39; color: #E4E6E5">
+    <div style="background-color: #383F39; color: #E4E6E5; text-align: left; padding: 20px">
       <a name="latest-project"></a>
-        <h3 style="text-align: center; padding: 120px">Minneapolis Art Institute Project</h3>
+        <h3 style="text-align: center; padding-top: 100px">Minneapolis Institute of Art Project</h3>
+        <hr style="width: 50%; border-color:#E4E6E5;" align="center"/>
+        <img src="../static/img/mia_logo.jpg" style="float: right; height: 250px; padding-left: 20px"
+        <p><br>The Minneapolis Institute of Art is home to over 90,000 pieces of art and history although they are only able to display a fraction of their inventory. However, they have provided their inventory records on their GitHub account for the public to explore.</p>
+        <p>My goal for ingesting and analyzing the Mia data was to gain experience with developing ETL pipelines, handling data in JSON format, and getting a deeper understanding of the history of Mia through the facts about the items. During data exploration, I determined that I would be able to answer questions regarding
+          who donated the most pieces, the origin of the majority of the works, and which works have been displayed for the longest amount of time.</p>
+        <p>At this point, I have completed the ETL pipeline and now have a relational database that is ready for data analysis. My next step is to import the data into Microsoft Power BI and create a comprehensive report to answer my previously defined questions.</p>
     </div>
 </body>
 {%endblock%}
